@@ -1,1 +1,9 @@
 # Materialjam
+![Screenshot (76)](https://github.com/Shivam1456/Materialjam/assets/127660326/8208f74e-f439-4077-9d45-c05626b7572d)
+![Screenshot (77)](https://github.com/Shivam1456/Materialjam/assets/127660326/3757f906-b933-45ee-93cb-c1eeb40546ae)
+![Screenshot (78)](https://github.com/Shivam1456/Materialjam/assets/127660326/a0a29959-64c4-449b-b273-6ec3fd623188)
+![Screenshot (79)](https://github.com/Shivam1456/Materialjam/assets/127660326/60f7e86a-6863-4520-988c-342d5d3a336a)
+![Screenshot (80)](https://github.com/Shivam1456/Materialjam/assets/127660326/f90a9ca8-0310-4b23-89df-7757a37c4983)
+![Screenshot (81)](https://github.com/Shivam1456/Materialjam/assets/127660326/4af09e22-df30-400c-a6dd-fa79c08e661e)
+![Screenshot (82)](https://github.com/Shivam1456/Materialjam/assets/127660326/31d7c167-4305-4ccb-9b01-f573ae298376)
+![Screenshot (83)](https://github.com/Shivam1456/Materialjam/assets/127660326/4e790dba-0a83-403c-a619-5c51117c2974)
