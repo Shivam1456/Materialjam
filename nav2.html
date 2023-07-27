@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background: black;
+        }
+        /* #sidebar {
+            height: 60px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: red;
+            padding: 0px 50px 0px 80px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            border-radius: 30px;
+
+        } */
+        /* #sidebar ul li a{
+            color:rgb(0, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+        } */
+        @media (max-width : 192px) {
+        #toggle{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: blue;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #toggle::before{
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 2px;
+            background: white;
+            transform: translateY(-5px);
+            transition:.2s;
+        }
+        #toggle::after{
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 2px;
+            background: white;
+            transform: translateY(5px);
+            transition:.2s;
+        }
+        #toggle.active::before{
+            transform: translateY(0px) rotate(45deg);
+        }
+        #toggle.active::after{
+            transform: translateY(0px) rotate(-45deg);
+        }
+
+        #sidebar{
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100vh;
+            background: blue;
+            transition: .5s;
+            
+        }
+        #sidebar.active{
+            left: 0px;
+        }
+        
+        #sidebar ul{
+            position: relative;
+            margin-top: 50px;
+        }
+        #sidebar ul li{
+            list-style: none;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 40px;
+            color: crimson;
+        }
+        #sidebar ul li:hover{
+            background: white;
+            
+        }
+        #sidebar ul li a{
+            color:rgb(0, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        #sidebar ul li a:hover{
+            color: black;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">Request Material</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const toggle=document.getElementById("toggle");
+        const sidebar =document.getElementById('sidebar');
+
+        document.onclick=function(e){
+            if(e.target.id!=='sidebar' && e.target.id !=='toggle')
+            {
+            toggle.classList.remove('active');
+            sidebar.classList.remove('active');   
+            }
+        }
+        toggle.onclick=function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

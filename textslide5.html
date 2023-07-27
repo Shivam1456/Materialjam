@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        #trophytextbox5{
+            border: 3px solid red;
+            width: 280px;
+        }
+        /* Slideshow container */
+        .slideshow-container5 {
+            position: relative;
+            background: #f1f1f1f1;
+        }
+
+        /* Slides */
+        .mySlides5 {
+            display: none;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev5,
+        .next5 {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 15px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next5 {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev5:hover,
+        .next5:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container5 {
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot5 {
+            cursor: pointer;
+            height: 12px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot5:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        /* .author {
+            color: cornflowerblue;
+        } */
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="trophytextbox5">
+    <!-- Slideshow container -->
+    <div class="slideshow-container5">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides5">
+            <q>The only time that exists in life is now.”
+                “Now is the only moment I will ever have. 
+                I want to spend the rest of my nows beside you.”“
+                Tomorrow is not guaranteed.</q>
+            <p class="author">- By Raman Srivastava</p>
+            <p class="author">CSE-3rd Year</p>
+        </div>
+
+        <div class="mySlides5">
+            <q>Don't downgrade your dream just to fit your Reality.
+                Upgrade your conviction to match your Destiny.</q>
+            <p class="author">- By Saba Khan</p>
+            <p class="author"> CSE-3rd Year</p>
+        </div>
+
+        <div class="mySlides5">
+            <q>You never realise your 'strength' until you cry and 
+                wipe your own tears and get yourself ready for another day.</q>
+            <p class="author">- By Nashrah Najam</p>
+            <p class="author">CSE-3rd Year</p>
+        </div>
+
+        <!-- <div class="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author">- xyz</p>
+        </div> -->
+
+        <!-- Next/prev buttons -->
+        <a class="prev5" onclick="plusSlides5(-1)">&#10094;</a>
+        <a class="next5" onclick="plusSlides5(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container5">
+        <span class="dot5" onclick="currentSlide5(1)"></span>
+        <span class="dot5" onclick="currentSlide5(2)"></span>
+        <span class="dot5" onclick="currentSlide5(3)"></span>
+        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+    </div>
+
+ </div>
+
+
+
+
+
+
+
+    <script>
+        var slideIndex5 = 1;
+        showSlides5(slideIndex5);
+
+        function plusSlides5(n5) {
+            showSlides5(slideIndex5 += n5);
+        }
+
+        function currentSlide5(n5) {
+            showSlides5(slideIndex5 = n5);
+        }
+
+        function showSlides5(n5) {
+            var i;
+            var slides5 = document.getElementsByClassName("mySlides5");
+            var dots5 = document.getElementsByClassName("dot5");
+            if (n5 > slides5.length) { slideIndex5 = 1 }
+            if (n5 < 1) { slideIndex5 = slides5.length }
+            for (i = 0; i < slides5.length; i++) {
+                slides5[i].style.display = "none";
+            }
+            for (i = 0; i < dots5.length; i++) {
+                dots5[i].className = dots5[i].className.replace(" active", "");
+            }
+            slides5[slideIndex5 - 1].style.display = "block";
+            dots5[slideIndex5 - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Year</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        * {
+            text-decoration: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: #8db4b2; */
+            background-image: linear-gradient(to left bottom, #f5497f, #ff6368, #ff8253, #ffa343, #ffc43f, #ffc33f, #ffc23e, #ffc13e, #ff9e44, #ff7958, #ff5773, #f33e8f);
+            /* background-color: ; */
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        .topimg {
+            height: 700px;
+            width: 100%;
+            /* border: 5px solid red; */
+            background: url(top3.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+             #toptext{
+            /* border:2px solid red ; */
+            margin-top: 35px;
+        }
+        #toptext1{
+            font-size: 50px;
+            letter-spacing: 4px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: aliceblue; 
+            text-transform: uppercase;
+         }
+         #toptext2{
+            text-align: center;
+            font-size: 23px;
+            font-style: italic;
+            color: white;
+            background: black;
+        }
+
+        .logo {
+            /* font-size: 33px;
+            font-family: 'Arvo', serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bolder; */
+            margin-top: 80px;
+            margin-left: -75px;
+            height: 150px;
+            width: 150px;
+            /* border: 3px solid black; */
+            background: url(logo1.png);
+            background-size: cover;
+        }
+
+        nav {
+            height: 60px;
+            margin-top: 5px;
+            font-family: 'Arvo', serif;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 50px 0px 80px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            /* border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: -20px -20px 22px #bebebe,
+                20px 20px 22px #ffffff; */
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            /* color: red; */
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding: 8px 10px;
+            text-transform: uppercase;
+        }
+
+        nav ul li :hover {
+            /* color: rgb(58, 140, 248); */
+            color: black;
+            transition: all 2s;
+            /* border: 2px solid white; */
+        }
+
+        nav .menubtn i {
+            color: whitesmoke;
+            font-size: 25px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #click {
+            display: none;
+        }
+
+        #click:checked~ul {
+            left: 0%;
+        }
+
+
+
+        .bookimg {
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 30px;
+            /* border: 4px solid #8db4b2; */
+            background: url(book1.png);
+            background-size: cover;
+        }
+
+
+
+        #heading,
+        #heading4,
+        #heading5 {
+            font-size: 30px;
+            margin-top: 28px;
+            margin-left: 110px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        #heading4,
+        #heading5 {
+            margin-top: 15px;
+        }
+
+        #content {
+            /* margin-left: 30px; */
+
+            /* margin-top: 10px; */
+            font-size: 25px;
+        }
+
+        .fa-download {
+            color: red;
+            margin-left: 5px;
+            margin-top: 5px;
+            font-size: 25px;
+        }
+
+        .fa-download:hover {
+            color: blue;
+        }
+
+        .contentbox {
+            /* border: 2px solid red; */
+            width: 100%;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        #content,
+        #content1,
+        #content2,
+        #content3,
+        #content4 {
+            height: 100px;
+            width: 100px;
+            /* border: 3px solid green; */
+            background: url(syllabus.png);
+            background-size: cover;
+            transition: .2s;
+            /* margin-left: 10px; */
+            /* text-align: center; */
+        }
+
+        #content {
+            background: url(books.png);
+            background-size: cover;
+        }
+
+        #content2 {
+            background: url(quantum.png);
+            background-size: cover;
+        }
+
+        #content3 {
+            background: url(paper1.png);
+            background-size: cover;
+        }
+
+        #content4 {
+            background: url(paper2.png);
+            background-size: cover;
+        }
+
+        #content:hover,
+        #content1:hover,
+        #content2:hover,
+        #content3:hover,
+        #content4:hover {
+            border: 2px solid #8ffff9;
+        }
+
+        #content1 {
+            margin-left: 40px;
+        }
+
+        #temp1,
+        #temp2,
+        #temp3,
+        #temp4 {
+            /* border: 2px solid rgb(216, 210, 210); */
+            width: 100%;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: none;
+        }
+
+        .showmore {
+            width: 100%;
+            /* border: 2px solid black; */
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #button1,
+        #button2,
+        #button3,
+        #button4 {
+            font-size: 17px;
+            cursor: pointer;
+            padding: 5px;
+            background: #8db4b2;
+            border-radius: 5px;
+            color: black;
+            font-weight: 500;
+            background-image: linear-gradient(to left bottom, #f5497f, #ff6368, #ff8253, #ffa343, #ffc43f, #ffc33f, #ffc23e, #ffc13e, #ff9e44, #ff7958, #ff5773, #f33e8f);
+        
+        }
+
+        #button1:hover,
+        #button2:hover,
+        #button3:hover,
+        #button4:hover
+         {
+            color: white;
+        }
+
+
+        #box1,
+        #box2,
+        #box3,
+        #box4,
+        #box5,
+        #box6 {
+            /* border: 3px solid rgb(110, 98, 98); */
+            margin-left: 40px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 130px;
+
+        }
+
+
+        .footer {
+            margin-top: 70px;
+            /* height: 300px;
+            width:100%; */
+            /* border: 5px solid black; */
+            /* border-top: 4px solid blue; */
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* background-color: rgb(121, 128, 138); */
+            /* background-color: rgb(138, 183, 247); */
+            background-color: rgb(3, 7, 14);
+        }
+
+        .foot {
+            height: 250px;
+            width: 250px;
+            /* border: 5px solid red; */
+            margin-top: 12px;
+            margin-left: 20px;
+            text-align: center;
+
+        }
+
+        #foot11,
+        #foot21,
+        #foot31 {
+            text-align: center;
+            color: rgb(253, 250, 250);
+            font-size: 30px;
+            /* border: 3px solid rgb(255, 251, 0); */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        #foot12,
+        #foot22,
+        #foot23,
+        #foot24,
+        #foot25,
+        #foot32,
+        #foot33,
+        #foot34 {
+            font-size: 21px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        #foot13 {
+            font-size: 21px;
+            color: white;
+        }
+
+        .sociallink {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            /* border: 2px solid black; */
+        }
+
+        #s1,
+        #s2,
+        #s3 {
+            margin: 8px;
+            margin-right: 18px;
+            height: 32px;
+            width: 32px;
+            /* border: 1px solid blue; */
+            border-radius: 50px;
+            font-size: 25px;
+            transition: .5s;
+        }
+
+        #s1,
+        #s2 {
+            /* background-color: blue; */
+            color: blue;
+        }
+
+        #s3 {
+            /* background-color: white; */
+            color: blue;
+        }
+
+        #s1:hover,
+        #s2:hover {
+            color: white;
+            transform: scale(1.1);
+            background-color: blue;
+        }
+
+        #s3:hover {
+            color: black;
+            transform: scale(1.1);
+            background-color: white;
+        }
+
+        .bottomimg {
+            background: url(img5.png);
+            width: 100%;
+            height: 600px;
+            /* border: 4px solid black; */
+            background-size: cover;
+        }
+
+
+
+
+        @media (max-width : 1192px) {
+
+                                        html,body{
+                overflow-x:hidden;
+                 max-width: 100%;
+            }
+
+            #click:checked~.menubtn i:before {
+                content: "\f00d";
+                color: white;
+                font-size: 27px;
+            }
+
+            nav ul {
+                background-color: #8db4b2;
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                height: 100vh;
+                width: 70%;
+                display: block;
+                text-align: center;
+                transition: all 1s ease-in-out;
+                /* border: 5px solid red; */
+                /* border-radius: 30px;
+                background: #e0e0e0;
+                box-shadow: inset -20px -20px 20px #c7c7c7,
+                    inset 20px 20px 20px #f9f9f9; */
+            }
+
+            nav ul li {
+                margin: 40px 0px;
+            }
+
+            nav ul li a {
+                font-size: 23px;
+                font-weight: bold;
+            }
+
+            nav ul li :hover {
+                color: rgb(58, 140, 248);
+                transition: all 1s ease;
+            }
+
+            nav .menubtn i {
+                display: block;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav {
+                padding: 0px 40px 0px 60px;
+            }
+
+            .topimg {
+                height: 430px;
+                width: 100%;
+                /* border: 5px solid red; */
+                /* background: url(img2.png); */
+                background-size: cover;
+            }
+
+            .bottomimg {
+                height: 450px;
+                background: url(btmimg.png);
+                background-size: cover;
+            }
+
+            #box {
+                margin-left: 65px;
+            }
+
+            #box1,
+            #box2,
+            #box3,
+            #box4,
+            #box5,
+            #box6 {
+                margin-left: 100px;
+                width: 230px;
+            }
+
+            .foot {
+                margin-left: 60px;
+            }
+
+            .bookimg {
+                margin-bottom: 20px;
+            }
+
+            #content,
+        #content1,
+        #content2,
+        #content3,
+        #content4{
+            height: 200px;
+            width: 200px;
+            
+        }
+
+
+        .topimg {
+            height: 1000px;
+            width: 100%;
+            /* border: 5px solid red; */
+            background: url(top3p.png);
+            background-size: cover;
+        }
+        }
+
+                @media (min-width:360px) and (max-width:860px){
+                                html,body{
+                overflow-x:hidden;
+                 max-width: 100%;
+            }
+            
+        .topimg {
+            height: 600px;
+            width: 100%;
+            margin-top: 60px;
+            /* border: 5px solid red; */
+            background: url(top3p.png);
+            background-size: cover;
+        }
+        .logo {
+            
+            margin-top: 40px;
+            margin-left: -75px;
+            height: 100px;
+            width: 100px;
+            /* border: 3px solid black; */
+            background: url(logo1.png);
+            background-size: cover;
+        }
+                   #toptext {
+                /* border:2px solid red ; */
+                margin-top: 0px;
+            }
+          #toptext1{
+              font-size:35px;
+              letter-spacing:0px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: aliceblue;
+          }
+            #toptext2{
+              font-size:18px;
+          }
+
+                      .bottomimg {
+                height: 210px;
+                background: url(btmimg.png);
+                background-size: cover;
+            }
+     
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topimg">
+        <div id="toptext">
+            <div id="toptext1">Materialjam</div>
+            <div id="toptext2"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Third Year <i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menubtn">
+            <i id="b" class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- <div id="nav1"> -->
+        <ul id="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="https://forms.gle/D87qVV7zCGVERYJ76">Request us</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <li><a href="https://forms.gle/MuskQB8xnh5F6wPDA">Feedback</a></li>
+            <!-- <li><a href="ogallery.html">gallery</a></li> -->
+            <!-- <li><a href="#contact">contact us</a></li> -->
+
+        </ul>
+        <!-- </div> -->
+    </nav>
+
+
+
+    <!-- section1 -->
+    <section>
+        <div class="bookimg">
+            <div id="heading">syllabus</div>
+        </div>
+        <div class="contentbox">
+            <div id="box">
+                <a href="https://drive.google.com/file/d/1EACs0nz47OD2dEsqCiCE6w_m-uaCxmeo/view?usp=sharing" target="_blank">
+                    <div id="content1"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ebook -->
+        <div class="bookimg">
+            <div id="heading">EBooks</div>
+        </div>
+        <div class="contentbox">
+            <div id="box1">
+                <a href="https://drive.google.com/file/d/1b9a3h80MPOoK4S7UlJtYk9_lF_ex-qK1/view?usp=sharing" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Compiler Design
+            </div>
+            <div id="box2">
+                <a href="https://drive.google.com/file/d/1nr-ZoafojMRV60fNrdfaNW8gK7JMisSy/view?usp=sharing" target="_blank">
+                    <div id="content" class="c1"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Database Management System
+            </div>
+            <div id="box3">
+                <a href="https://drive.google.com/file/d/1n0OtJSWg_LSvWPbe2ZMgeCR2uYb9UwUC/view?usp=sharing" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Inroduction to Algorithms
+            </div>
+            <div id="box4">
+                <a href="https://drive.google.com/file/d/1NYAXwgD8nOs5_bMNXGgnbvLBgxzpHfu4/view?usp=sharing" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Object Oriented Programming
+            </div>
+            <div id="box5">
+                <a href="https://drive.google.com/file/d/1BVHh8CCh_J4AYumtvbK-NlwME8IgSuay/view?usp=sharing" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Object Oriented Programming (2)
+            </div>
+            <!-- <div id="box6">
+                <a href="#paste link here" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div> -->
+        </div>
+        </div>
+
+<!-- 
+        <div id="temp1">
+            <div id="box1">
+                <a href="https://www.google.com/" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box2">
+                <a href="#paste link here" target="_blank">
+                    <div id="content" class="c1"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box3">
+                <a href="#paste link here" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box4">
+                <a href="#paste link here" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box5">
+                <a href="#paste link here" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box6">
+                <a href="#paste link here" target="_blank">
+                    <div id="content"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+        </div>
+        <div class="showmore">
+            <button id="button1" onclick="show_more1()">Show more</button>
+        </div> -->
+        <!-- ebook -->
+
+        <!-- quantum -->
+
+        <div class="bookimg">
+            <div id="heading">Quantum</div>
+        </div>
+        <div class="contentbox">
+            <div id="box1">
+                <a href="https://drive.google.com/file/d/1QfxK46-MQd7l-_Ut1meGQ-WTlQcaZd86/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Application of Soft Computing
+            </div>
+            <div id="box2">
+                <a href="https://drive.google.com/file/d/1hJCwzAzrSGV9w999kjonT_IfQZ7n0_hs/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Compiler Design
+            </div>
+            <div id="box3">
+                <a href="https://drive.google.com/file/d/1xZtPWHEA4Zo1qaGC3EMlLWX2Ah4oM1uW/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Constitution of India Law & Eng.
+            </div>
+            <div id="box4">
+                <a href="https://drive.google.com/file/d/1IrBLDX_nfjh2PQk7T7WJiqWVMUhEkgYK/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Design and Analysis of Algorithms
+            </div>
+            <div id="box5">
+                <a href="https://drive.google.com/file/d/1hLmw346inA5qycCfbOnF_erhR36bF8QB/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Database Management System
+            </div>
+            <div id="box6">
+                <a href="https://drive.google.com/file/d/1uih0mJSN6js4WVLjbYdBnTAn2CbZobaW/view?usp=sharing" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Object Oriented System Design
+            </div>
+        </div>
+        </div>
+
+
+        <!-- <div id="temp2">
+            <div id="box1">
+                <a href="https://www.google.com/" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box2">
+                <a href="#paste link here" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box3">
+                <a href="#paste link here" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box4">
+                <a href="#paste link here" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box5">
+                <a href="#paste link here" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box6">
+                <a href="#paste link here" target="_blank">
+                    <div id="content2"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+        </div>
+        <div class="showmore">
+            <button id="button2" onclick="show_more2()">Show more</button>
+        </div> -->
+
+
+
+        <!-- quantum -->
+
+        <!-- Semester paper -->
+
+        <div class="bookimg">
+            <div id="heading4">Semester paper</div>
+        </div>
+        <div class="contentbox">
+            <div id="box1">
+                <a href="3_sem_paper20_21.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>2020 - 2021
+            </div>
+            <div id="box2">
+                <a href="3_sem_paper18-19.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>2018 - 2019
+            </div>
+            <!-- <div id="box3">
+                <a href="3_cile_sem_paper.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Constitution of India Law & Eng.
+            </div>
+            <div id="box4">
+                <a href="3_DAA_paper.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Design and Analysis of Algorithms
+            </div>
+            <div id="box5">
+                <a href="3_dbms_sem_paper.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Database Management System
+            </div>
+            <div id="box6">
+                <a href="3_oosd_sem_paper.html">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Object Oriented System Design
+            </div> -->
+        </div>
+        </div>
+
+        <!-- <div id="temp3">
+            <div id="box1">
+                <a href="https://www.google.com/">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box2">
+                <a href="#paste link here">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box3">
+                <a href="#paste link here">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box4">
+                <a href="#paste link here">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box5">
+                <a href="#paste link here">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box6">
+                <a href="#paste link here">
+                    <div id="content3"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+        </div>
+        <div class="showmore">
+            <button id="button3" onclick="show_more3()">Show more</button>
+        </div> -->
+        <!-- semester paper -->
+
+
+        <!-- sessional paper -->
+        <div class="bookimg">
+            <div id="heading5">Sessional paper</div>
+        </div>
+        <div class="contentbox">
+            <div id="box1">
+                <a href="3_ses_paper20_21.html">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>2020 - 2021
+            </div>
+            <div id="box2">
+                <a href="3_ses_paper21_22.html">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>2021 -2022
+            </div>
+            <!-- <div id="box3">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Constitution of India Law & Eng.
+            </div>
+            <div id="box4">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Design and Analysis of Algorithms
+            </div>
+            <div id="box5">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Database Management System
+            </div>
+            <div id="box6">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Object Oriented System Design
+            </div> -->
+        </div>
+        </div>
+
+        <!-- <div id="temp4">
+
+            <div id="box1">
+                <a href="https://www.google.com/">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box2">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box3">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box4">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box5">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div id="box6">
+                <a href="#paste link here">
+                    <div id="content4"> <i class="fa fa-download" aria-hidden="true"></i></div>
+                </a>Lorem ipsum dolor sit amet consectetur.
+            </div>
+
+        </div>
+        <div class="showmore">
+            <button id="button4" onclick="show_more4()">Show more</button>
+
+        </div> -->
+
+        <!-- sessional paper -->
+
+    </section>
+
+    <!-- secton2 -->
+    <section>
+        <div class="bottomimg">
+
+        </div>
+    </section>
+
+    <footer>
+        <a name="contact"></a>
+        <div class="footer">
+
+            <div id="foot2" class="foot">
+                <div id="foot21">About Us</div>
+                <div id="foot22">We are B.tech CSE-3rd Year students of "FGIET", Raebareli. We developed this website to help our colleagues to get study
+                    materials. If anybody needs help then feel free to contact us..</div>
+              
+            </div>
+
+            <div id="foot1" class="foot">
+                <div id="foot11">Founder & Developer</div>
+                <div id="foot12">Vivek Kumar</div>
+                <div id="foot13"><i class="fa fa-envelope" aria-hidden="true"></i> varanasisk0011@gmail.com</div>
+                <div class="sociallink">
+                  <a href="https://www.facebook.com/profile.php?id=100037722421926"> <div id="s1"><i class="fa fa-facebook" aria-hidden="true"></i></div> </a> 
+                  <a href="https://www.linkedin.com/in/vivek-kumar-b974b61a6">  <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a> 
+                  <a href="https://github.com/vivekkumar9919"> <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div></a> 
+                </div>
+            </div>
+
+            <div id="foot2" class="foot">
+                <div id="foot21">Services</div>
+                <div id="foot22">Syllabus</div>
+                <div id="foot22">Ebooks</div>
+                <div id="foot23">Quantums</div>
+                <div id="foot24">Sessional Paper</div>
+                <div id="foot25">Semester Paper</div>
+            </div>
+
+            <div id="foot3" class="foot">
+                <div id="foot31">Co-Founder & Developer</div>
+                <div id="foot32">Shivam Jaiswal</div>
+                <div id="foot13"><i class="fa fa-envelope" aria-hidden="true"></i> shivamjaiswal1292000@gmail.com</div>
+                <div class="sociallink">
+                    <a href="https://instagram.com/ekvillain3446?igshid=OGY3MTU3OGY1Mw=="> <div id="s1"><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+                   <a href="https://www.linkedin.com/in/shivam-jaiswal-646aa51b2/">  <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a>
+                   <a href="https://github.com/Shivam1456">  <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div></a>
+                </div>
+                <!-- <div id="foot33">name2</div>
+                <div class="sociallink">
+                    <div id="s1"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        var a = 1;
+        function show_more1() {
+            if (a == 1) {
+                document.getElementById("temp1").style.display = "grid";
+                document.getElementById("button1").innerHTML = "Show less"
+                return a = 0;
+            }
+            else {
+                document.getElementById("temp1").style.display = "none";
+                document.getElementById("button1").innerHTML = "Show more"
+                return a = 1;
+            }
+        }
+
+        var b = 1;
+        function show_more2() {
+            if (b == 1) {
+                document.getElementById("temp2").style.display = "grid";
+                document.getElementById("button2").innerHTML = "Show less"
+                return b = 0;
+            }
+            else {
+                document.getElementById("temp2").style.display = "none";
+                document.getElementById("button2").innerHTML = "Show more"
+                return b = 1;
+            }
+        }
+
+        var c;
+        function show_more3() {
+            if (c == 1) {
+                document.getElementById("temp3").style.display = "grid";
+                document.getElementById("button3").innerHTML = "Show less"
+                return c = 0;
+            }
+            else {
+                document.getElementById("temp3").style.display = "none";
+                document.getElementById("button3").innerHTML = "Show more"
+                return c = 1;
+            }
+        }
+
+        var d;
+        function show_more4() {
+            if (d == 1) {
+                document.getElementById("temp4").style.display = "grid";
+                document.getElementById("button4").innerHTML = "Show less"
+                return d = 0;
+            }
+            else {
+                document.getElementById("temp4").style.display = "none";
+                document.getElementById("button4").innerHTML = "Show more"
+                return d = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

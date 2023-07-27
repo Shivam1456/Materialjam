@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        * {
+            text-decoration: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: #8db4b2; */
+            /* background-image: linear-gradient(to right top, #1769e5, #6f5fe4, #a151dc, #ca3bcd, #eb12b7); */
+            background-image: linear-gradient(to right top, #f3e64c, #fbd448, #ffc249, #ffb14e, #ffa154, #fe9552, #fc8851, #f97b51, #f76d49, #f45d41, #f24b3b, #ef3636);
+            /* background-color: ; */
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        .topimg {
+            /* height: 800px; */
+            height: 700px;
+            margin-left: -30px;
+            /* margin-top: 70px; */
+            width: 100%;
+            /* border: 5px solid red; */
+            background: url(img5.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+
+        #toptext {
+            /* border:2px solid red ; */
+            margin-top: 600px;
+        }
+
+        #toptext1 {
+            font-size: 50px;
+            letter-spacing: 4px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+
+        #toptext2 {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            color: white;
+            background: black;
+        }
+
+        .logo {
+            /* font-size: 33px;
+            font-family: 'Arvo', serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bolder; */
+            margin-top: 80px;
+            margin-left: -75px;
+            height: 150px;
+            width: 150px;
+            /* border: 3px solid black; */
+            background: url(logo1.png);
+            background-size: cover;
+        }
+
+        nav {
+            height: 60px;
+            margin-top: 5px;
+            font-family: 'Arvo', serif;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 50px 0px 80px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            /* border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: -20px -20px 22px #bebebe,
+                20px 20px 22px #ffffff; */
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            /* color: red; */
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding: 8px 10px;
+            text-transform: uppercase;
+        }
+
+        nav ul li :hover {
+            /* color: rgb(58, 140, 248); */
+            color: black;
+            transition: all 2s;
+            /* border: 2px solid white; */
+        }
+
+        nav .menubtn i {
+            color: whitesmoke;
+            font-size: 25px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #click {
+            display: none;
+        }
+
+        #click:checked~ul {
+            left: 0%;
+        }
+
+        .section1 {
+            margin-top: 20px;
+            margin-left: 50px;
+            /* height: 400px;
+            width: 100%; */
+            /* border: 5px solid blue; */
+            /* display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            /* width: 100%; */
+            /* border: 3px solid red; */
+            /* margin-top: 20px; */
+            margin-left: 70px;
+            transition: .5s;
+            cursor: pointer;
+
+        }
+
+        /* #boxbutton{
+            font-size: 15px;
+            letter-spacing: 1px;
+            padding: 3px;
+            cursor: pointer;
+            margin-top: 165px;
+            margin-left: 64px;
+            
+        } */
+
+        #mainbox1,
+        #mainbox2,
+        #mainbox3,
+        #mainbox4,
+        #mainbox5 {
+            border: 2px solid black;
+            margin-top: 80px;
+            /* padding-left: 30px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #trophy1,
+        #trophy2,
+        #trophy3,
+        #trophy4,
+        #trophy5 {
+            height: 270px;
+            width: 550px;
+            border: 2px solid black;
+            margin-right: 70px;
+            background: url(trophy2.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        #trophy2,
+        #trophy4 {
+            margin-right: 0px;
+            /* margin-left: 30px; */
+            background: url(trophy3.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #trophytextbox1,
+        #trophytextbox2,
+        #trophytextbox3,
+        #trophytextbox4,
+        #trophytextbox5 {
+            border: 2px solid green;
+            height: 270px;
+            width: 300px;
+            margin-left: 50px;
+            /* margin-top: 30px; */
+            font-size: 20px;
+            color: white;
+        }
+
+        /* #trophytextbox1{
+            margin-left: auto;
+            display: block;
+        } */
+
+        #trophytextbox2,
+        #trophytextbox4 {
+            margin-right: 80px;
+        }
+
+
+        /* 
+        #trophytextbox2,
+        #trophytextbox4{
+            margin-left: 330px;
+        } */
+
+        /* #trophytextbox2{
+            margin-left: 800px;
+            margin: auto;
+            display: block;
+        } */
+
+
+
+
+
+
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        #box1 {
+            background: url(box1.png);
+            /* background-size: cover;
+            border: 2px solid red;
+            display: block;
+            margin-left: 100px; */
+            margin-left: 180px;
+        }
+
+        #box2 {
+            background: url(box2.png);
+            margin-right: 270px;
+            /* margin-left: 130px; */
+
+        }
+
+        #box3 {
+            background: url(box3.png);
+            margin-left: 180px;
+        }
+
+        #box4 {
+            background: url(box4.png);
+            margin-right: 200px;
+        }
+
+        #box5 {
+            background: url(box5.png);
+            margin-left: 180px;
+            /* border: 2px solid red; */
+            /* margin-left: 20px; */
+        }
+
+
+        .footer {
+            margin-top: 70px;
+            /* height: 300px;
+            width:100%; */
+            /* border: 5px solid black; */
+            /* border-top: 4px solid blue; */
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            background-color: black;
+            color: white;
+        }
+
+        .foot {
+            height: 250px;
+            width: 250px;
+            /* border: 5px solid red; */
+            margin-top: 12px;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        #foot11,
+        #foot21,
+        #foot31 {
+            text-align: center;
+            color: rgb(253, 250, 250);
+            font-size: 30px;
+            /* border: 3px solid rgb(255, 251, 0); */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        #foot12,
+        #foot22,
+        #foot23,
+        #foot24,
+        #foot25,
+        #foot32,
+        #foot33,
+        #foot34 {
+            font-size: 21px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        #foot13 {
+            font-size: 21px;
+        }
+
+        .sociallink {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            /* border: 2px solid black; */
+        }
+
+        #s1,
+        #s2,
+        #s3 {
+            margin: 8px;
+            margin-right: 18px;
+            height: 32px;
+            width: 32px;
+            /* border: 1px solid blue; */
+            border-radius: 50px;
+            font-size: 25px;
+            transition: .5s;
+        }
+
+        #s1,
+        #s2 {
+            /* background-color: blue; */
+            color: blue;
+        }
+
+        #s3 {
+            /* background-color: white; */
+            color: blue;
+        }
+
+        #s1:hover,
+        #s2:hover {
+            color: white;
+            transform: scale(1.1);
+            background-color: blue;
+        }
+
+        #s3:hover {
+            color: black;
+            transform: scale(1.1);
+            background-color: white;
+        }
+
+        .bottomimg {
+            background: url(img5.png);
+            width: 100%;
+            height: 600px;
+            margin-top: 50px;
+            /* border: 4px solid black; */
+            background-size: cover;
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+        /* textslide1 */
+
+        /* 3rd year */
+
+        /* #trophytextbox3 {
+            border: 3px solid red;
+            height: 270px;
+            width: 300px;
+        } */
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            /* background: #f1f1f1f1; */
+            /* opacity: 0; */
+            height: 230px;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 15px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 9px;
+            /* background: #ddd; */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 11px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: rgb(10, 12, 15);
+        }
+
+
+
+        /* 1st year */
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            /* background: #f1f1f1f1; */
+            height: 230px;
+        }
+
+        /* Slides */
+        .mySlides1 {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev1,
+        .next1 {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 15px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next1 {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev1:hover,
+        .next1:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container1 {
+            text-align: center;
+            padding: 10px;
+            /* background: #ddd; */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot1 {
+            cursor: pointer;
+            height: 12px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: black;
+        }
+
+
+        /* 2nd year     */
+
+
+        /* Slideshow container */
+        .slideshow-container2 {
+            position: relative;
+            /* background: #f1f1f1f1; */
+            height: 230px;
+        }
+
+        /* Slides */
+        .mySlides2 {
+            display: none;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev2,
+        .next2 {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 15px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next2 {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev2:hover,
+        .next2:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container2 {
+            text-align: center;
+            padding: 10px;
+            /* background: #ddd; */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot2 {
+            cursor: pointer;
+            height: 12px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot2:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: black;
+        }
+
+
+
+        /* 4th year */
+
+        .slideshow-container3 {
+            position: relative;
+            /* background: #f1f1f1f1; */
+            height: 230px;
+        }
+
+        /* Slides */
+        .mySlides3 {
+            display: none;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev3,
+        .next3 {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 15px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next3 {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev3:hover,
+        .next3:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container3 {
+            text-align: center;
+            padding: 10px;
+            /* background: #ddd; */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot3 {
+            cursor: pointer;
+            height: 12px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot3:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+
+
+
+
+
+        @media (max-width : 1192px) {
+
+            #click:checked~.menubtn i:before {
+                content: "\f00d";
+                color: red;
+                font-size: 27px;
+            }
+
+            nav ul {
+                background-color: #8db4b2;
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                height: 100vh;
+                width: 70%;
+                display: block;
+                text-align: center;
+                transition: all 1s ease-in-out;
+                /* border: 5px solid red; */
+                /* border-radius: 30px;
+                background: #e0e0e0;
+                box-shadow: inset -20px -20px 20px #c7c7c7,
+                    inset 20px 20px 20px #f9f9f9; */
+            }
+
+            nav ul li {
+                margin: 40px 0px;
+            }
+
+            nav ul li a {
+                font-size: 23px;
+                font-weight: bold;
+            }
+
+            nav ul li :hover {
+                color: rgb(58, 140, 248);
+                transition: all 1s ease;
+            }
+
+            nav .menubtn i {
+                display: block;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav {
+                padding: 0px 40px 0px 60px;
+            }
+
+            .topimg {
+                height: 1100px;
+                width: 100%;
+                margin-left: 0px;
+                /* border: 5px solid red; */
+                background: url(img3.png);
+                background-size: cover;
+            }
+
+            .bottomimg {
+                height: 210px;
+            }
+
+            .foot {
+                margin-left: 60px;
+            }
+
+            .bottomimg {
+                display: block;
+                background: url(btmimg.png);
+                width: 100%;
+                height: 400px;
+                /* border: 4px solid black; */
+                background-size: cover;
+            }
+
+            .box {
+                /* margin-bottom: 50px; */
+                margin-left: 100px;
+            }
+
+            #box2,
+            #box4 {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+
+            #box1,
+            #box3,
+            #box5 {
+                margin-left: 0px;
+            }
+
+            #toptext {
+                /* border:2px solid red ; */
+                margin-top: 1020px;
+            }
+
+            #trophy1,
+            #trophy2,
+            #trophy3,
+            #trophy4,
+            #trophy5 {
+                display: none;
+                /* margin-right: 100px; */
+            }
+
+            #mainbox1,
+            #mainbox2,
+            #mainbox3,
+            #mainbox4,
+            #mainbox5 {
+                display: flex;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                /* display: block; */
+            }
+
+            #phonetextbox {
+                display: flex;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topimg">
+        <div id="toptext">
+            <div id="toptext1">Materialjam</div>
+            <div id="toptext2">Hub of FGIET Study Materail</div>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menubtn">
+            <i id="b" class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- <div id="nav1"> -->
+        <ul id="nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">Request us</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <li><a href="https://forms.gle/MuskQB8xnh5F6wPDA">Feedback</a></li>
+            <!-- <li><a href="ogallery.html">gallery</a></li> -->
+
+
+        </ul>
+        <!-- </div> -->
+    </nav>
+
+    <!-- section1 -->
+    <section>
+        <div class="section1">
+            <!-- <div id="mainbox"></div> -->
+
+            <div id="mainbox1">
+                <a href="firstyear.html">
+                    <div id="box1" class="box"> </div>
+                </a>
+                <div id="trophytextbox1">
+
+                    <div class="slideshow-container">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides1">
+                            <q>Every book starts with an index that describes the rest of
+                                the book. Write your index and be the best author of it.</q>
+                            <p class="author">- By Shreya Pandey</p>
+                            <p class="author">CSE-1st Year</p>
+                        </div>
+
+                        <div class="mySlides1">
+                            <q>Life is such a journey
+                                which leads to different paths.
+                                But you have to be on the same path that
+                                takes you towards your destination</q>
+                            <p class="author">- By Anamika Jaiswal</p>
+                            <p class="author"> CSE-1st Year</p>
+                        </div>
+
+                        <div class="mySlides1">
+                            <q>Computer science is a science of abstraction -
+                                creating the right model for a
+                                problem and devising the appropriate
+                                mechanizable techniques to solve it</q>
+                            <p class="author">- By Shagun Jaiswal</p>
+                            <p class="author">CSE-1st Year</p>
+                        </div>
+
+                        <div class="mySlides1">
+                            <q>Set a goal so big that you can’t achieve it
+                                until you grow into the person who can.</q>
+                            <p class="author"> - By Anisha Singh</p>
+                            <p class="author">ECE-1st Year</p>
+                        </div>
+
+                        <!-- Next/prev buttons -->
+                        <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+                        <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+                    </div>
+
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dot-container1">
+                        <span class="dot1" onclick="currentSlide1(1)"></span>
+                        <span class="dot1" onclick="currentSlide1(2)"></span>
+                        <span class="dot1" onclick="currentSlide1(3)"></span>
+                        <span class="dot1" onclick="currentSlide1(4)"></span>
+                    </div>
+
+                </div>
+                <div id="trophy1"></div>
+            </div>
+
+
+            <!-- <div id="box1" class="box"></div> -->
+
+            <div id="mainbox2">
+                <div id="trophy2"></div>
+
+                <a href="secondyear.html">
+                    <div id="box2" class="box"></div>
+                </a>
+                <div id="trophytextbox2">
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container2">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides2">
+                            <q>The only time that exists in life is now.”
+                                “Now is the only moment I will ever have.
+                                I want to spend the rest of my nows beside you.”“
+                                Tomorrow is not guaranteed.</q>
+                            <p class="author">- By Raman Srivastava</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+
+                        <div class="mySlides2">
+                            <q>Don't downgrade your dream just to fit your Reality.
+                                Upgrade your conviction to match your Destiny.</q>
+                            <p class="author">- By Saba Khan</p>
+                            <p class="author"> CSE-3rd Year</p>
+                        </div>
+
+                        <div class="mySlides2">
+                            <q>You never realise your 'strength' until you cry and
+                                wipe your own tears and get yourself ready for another day.</q>
+                            <p class="author">- By Nashrah Najam</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+
+                        <!-- <div class="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author">- xyz</p>
+        </div> -->
+
+                        <!-- Next/prev buttons -->
+                        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dot-container2">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+                    </div>
+
+                </div>
+                <!-- <div id="trophy"><div id="trophytextbox">Lorem he</div></div> -->
+            </div>
+
+
+            <div id="mainbox3">
+                <a href="thirdyear.html">
+                    <div id="box3" class="box"></div>
+                </a>
+                <div id="trophytextbox3">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides">
+                            <q>The only time that exists in life is now.”
+                                “Now is the only moment I will ever have.
+                                I want to spend the rest of my nows beside you.”“
+                                Tomorrow is not guaranteed.</q>
+                            <p class="author">- By Raman Srivastava</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <q>Don't downgrade your dream just to fit your Reality.
+                                Upgrade your conviction to match your Destiny.</q>
+                            <p class="author">- By Saba Khan</p>
+                            <p class="author"> CSE-3rd Year</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <q>You never realise your 'strength' until you cry and
+                                wipe your own tears and get yourself ready for another day.</q>
+                            <p class="author">- By Nashrah Najam</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+
+                        <!-- <div class="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author">- xyz</p>
+        </div> -->
+
+                        <!-- Next/prev buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+                    </div>
+                </div>
+                <div id="trophy3"></div>
+            </div>
+
+            <!-- <a href="fourthyear.html"> -->
+            <div id="mainbox4">
+                <div id="trophy4"></div>
+                <a href="fourthyear.html">
+                    <div id="box4" class="box"></div>
+                </a>
+                <div id="trophytextbox4">
+
+                    <div class="slideshow-container3">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides3">
+                            <q>The only time that exists in life is now.”
+                                “Now is the only moment I will ever have. 
+                                I want to spend the rest of my nows beside you.”“
+                                Tomorrow is not guaranteed.</q>
+                            <p class="author">- By Raman Srivastava</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+                
+                        <div class="mySlides3">
+                            <q>Don't downgrade your dream just to fit your Reality.
+                                Upgrade your conviction to match your Destiny.</q>
+                            <p class="author">- By Saba Khan</p>
+                            <p class="author"> CSE-3rd Year</p>
+                        </div>
+                
+                        <div class="mySlides3">
+                            <q>You never realise your 'strength' until you cry and 
+                                wipe your own tears and get yourself ready for another day.</q>
+                            <p class="author">- By Nashrah Najam</p>
+                            <p class="author">CSE-3rd Year</p>
+                        </div>
+                
+                        <!-- <div class="mySlides">
+                            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                            <p class="author">- xyz</p>
+                        </div> -->
+                
+                        <!-- Next/prev buttons -->
+                        <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                        <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+                    </div>
+                
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dot-container3">
+                        <span class="dot3" onclick="currentSlide3(1)"></span>
+                        <span class="dot3" onclick="currentSlide3(2)"></span>
+                        <span class="dot3" onclick="currentSlide3(3)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="mainbox5">
+                <a href="#">
+                    <div id="box5" class="box"></div>
+                </a>
+                <div id="trophytextbox5">
+
+
+
+
+                </div>
+                <div id="trophy5"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- secton2 -->
+    <section>
+        <div class="bottomimg">
+
+        </div>
+    </section>
+
+    <footer>
+        <a name="contact"></a>
+        <div class="footer">
+
+            <div id="foot2" class="foot">
+                <div id="foot21">About us</div>
+                <div id="foot22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia nemo alias? Natus
+                    harum tempore, cumque eos facere laborum amet.</div>
+
+            </div>
+
+            <div id="foot1" class="foot">
+                <div id="foot11">Founder & Developer</div>
+                <div id="foot12">Vivek Kumar</div>
+                <div id="foot13"><i class="fa fa-envelope" aria-hidden="true"></i> varanasisk0011@gmail.com</div>
+                <div class="sociallink">
+                    <div id="s1"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div>
+                </div>
+            </div>
+
+            <div id="foot2" class="foot">
+                <div id="foot21">Services</div>
+                <div id="foot22">Syllabus</div>
+                <div id="foot22">Ebooks</div>
+                <div id="foot23">Quantum</div>
+                <div id="foot24">Semester Paper</div>
+                <div id="foot25">Sessional Paper</div>
+            </div>
+
+            <div id="foot3" class="foot">
+                <div id="foot31">Co-Founder & Developer</div>
+                <div id="foot32">Shivam Jaiswal</div>
+                <div id="foot13"><i class="fa fa-envelope" aria-hidden="true"></i> shivamjaiswal1292000@gmail.com</div>
+                <div class="sociallink">
+                    <div id="s1"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div>
+                </div>
+                <!-- <div id="foot33">Name2</div> -->
+                <!-- <div class="sociallink">
+                    <div id="s1"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div id="s2"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    <div id="s3"><i class="fa fa-github" aria-hidden="true"></i></div>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- 3rd year -->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+
+
+        // 1st year
+
+
+        var slideIndex1 = 1;
+        showSlides1(slideIndex1);
+
+        function plusSlides1(n1) {
+            showSlides1(slideIndex1 += n1);
+        }
+
+        function currentSlide1(n1) {
+            showSlides1(slideIndex1 = n1);
+        }
+
+        function showSlides1(n1) {
+            var i;
+            var slides1 = document.getElementsByClassName("mySlides1");
+            var dots1 = document.getElementsByClassName("dot1");
+            if (n1 > slides1.length) { slideIndex1 = 1 }
+            if (n1 < 1) { slideIndex1 = slides1.length }
+            for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+            }
+            for (i = 0; i < dots1.length; i++) {
+                dots1[i].className = dots1[i].className.replace(" active", "");
+            }
+            slides1[slideIndex1 - 1].style.display = "block";
+            dots1[slideIndex1 - 1].className += " active";
+        }
+
+
+        // 2nd year
+
+        var slideIndex2 = 1;
+        showSlides2(slideIndex2);
+
+        function plusSlides2(n2) {
+            showSlides2(slideIndex2 += n2);
+        }
+
+        function currentSlide2(n2) {
+            showSlides2(slideIndex2 = n2);
+        }
+
+        function showSlides2(n2) {
+            var i;
+            var slides2 = document.getElementsByClassName("mySlides2");
+            var dots2 = document.getElementsByClassName("dot2");
+            if (n2 > slides2.length) { slideIndex2 = 1 }
+            if (n2 < 1) { slideIndex2 = slides2.length }
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            for (i = 0; i < dots2.length; i++) {
+                dots2[i].className = dots2[i].className.replace(" active", "");
+            }
+            slides2[slideIndex2 - 1].style.display = "block";
+            dots2[slideIndex2 - 1].className += " active";
+        }
+
+
+// 4th year
+
+var slideIndex3 = 1;
+        showSlides3(slideIndex3);
+
+        function plusSlides3(n3) {
+            showSlides3(slideIndex3 += n3);
+        }
+
+        function currentSlide3(n3) {
+            showSlides3(slideIndex3 = n3);
+        }
+
+        function showSlides3(n3) {
+            var i;
+            var slides3 = document.getElementsByClassName("mySlides3");
+            var dots3 = document.getElementsByClassName("dot3");
+            if (n3 > slides3.length) { slideIndex3 = 1 }
+            if (n3 < 1) { slideIndex3 = slides3.length }
+            for (i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";
+            }
+            for (i = 0; i < dots3.length; i++) {
+                dots3[i].className = dots3[i].className.replace(" active", "");
+            }
+            slides3[slideIndex3 - 1].style.display = "block";
+            dots3[slideIndex3 - 1].className += " active";
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
